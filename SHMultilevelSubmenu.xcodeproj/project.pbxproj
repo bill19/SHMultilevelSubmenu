@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A33F07F530977B8F50A1614 /* libPods-SHMultilevelSubmenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB106CF2B128493891ED9FA /* libPods-SHMultilevelSubmenu.a */; };
+		6D45FB3120B7E9DD002FB386 /* SHItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D45FB2A20B7E9DD002FB386 /* SHItemModel.m */; };
+		6D45FB3220B7E9DD002FB386 /* SHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D45FB2B20B7E9DD002FB386 /* SHItem.m */; };
+		6D45FB3320B7E9DD002FB386 /* UIView+ToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D45FB2E20B7E9DD002FB386 /* UIView+ToImage.m */; };
+		6D45FB3420B7E9DD002FB386 /* SHSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D45FB2F20B7E9DD002FB386 /* SHSegmentController.m */; };
 		6D52740020B645F6001532BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5273FF20B645F6001532BF /* AppDelegate.m */; };
 		6D52740320B645F6001532BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52740220B645F6001532BF /* ViewController.m */; };
 		6D52740620B645F6001532BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D52740420B645F6001532BF /* Main.storyboard */; };
@@ -17,8 +21,6 @@
 		6D52741120B645F7001532BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52741020B645F7001532BF /* main.m */; };
 		6D52741B20B645F7001532BF /* SHMultilevelSubmenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52741A20B645F7001532BF /* SHMultilevelSubmenuTests.m */; };
 		6D52742620B645F8001532BF /* SHMultilevelSubmenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52742520B645F8001532BF /* SHMultilevelSubmenuUITests.m */; };
-		6DAD788120B7A04E00CB0204 /* MultilevelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD788020B7A04E00CB0204 /* MultilevelConfig.m */; };
-		6DAD788420B7A2B400CB0204 /* MultilevelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD788320B7A2B400CB0204 /* MultilevelModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,14 @@
 /* Begin PBXFileReference section */
 		0BB106CF2B128493891ED9FA /* libPods-SHMultilevelSubmenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHMultilevelSubmenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FA114B25719819014A8541 /* Pods-SHMultilevelSubmenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHMultilevelSubmenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHMultilevelSubmenu/Pods-SHMultilevelSubmenu.debug.xcconfig"; sourceTree = "<group>"; };
+		6D45FB2920B7E9DD002FB386 /* UIView+ToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ToImage.h"; sourceTree = "<group>"; };
+		6D45FB2A20B7E9DD002FB386 /* SHItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHItemModel.m; sourceTree = "<group>"; };
+		6D45FB2B20B7E9DD002FB386 /* SHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHItem.m; sourceTree = "<group>"; };
+		6D45FB2C20B7E9DD002FB386 /* SHSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSegmentController.h; sourceTree = "<group>"; };
+		6D45FB2D20B7E9DD002FB386 /* SHItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHItemModel.h; sourceTree = "<group>"; };
+		6D45FB2E20B7E9DD002FB386 /* UIView+ToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ToImage.m"; sourceTree = "<group>"; };
+		6D45FB2F20B7E9DD002FB386 /* SHSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSegmentController.m; sourceTree = "<group>"; };
+		6D45FB3020B7E9DD002FB386 /* SHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHItem.h; sourceTree = "<group>"; };
 		6D5273FB20B645F6001532BF /* SHMultilevelSubmenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHMultilevelSubmenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5273FE20B645F6001532BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D5273FF20B645F6001532BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,10 +68,6 @@
 		6D52742120B645F7001532BF /* SHMultilevelSubmenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHMultilevelSubmenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D52742520B645F8001532BF /* SHMultilevelSubmenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHMultilevelSubmenuUITests.m; sourceTree = "<group>"; };
 		6D52742720B645F8001532BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DAD787F20B7A04E00CB0204 /* MultilevelConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultilevelConfig.h; sourceTree = "<group>"; };
-		6DAD788020B7A04E00CB0204 /* MultilevelConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelConfig.m; sourceTree = "<group>"; };
-		6DAD788220B7A2B400CB0204 /* MultilevelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultilevelModel.h; sourceTree = "<group>"; };
-		6DAD788320B7A2B400CB0204 /* MultilevelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelModel.m; sourceTree = "<group>"; };
 		E94ECC8C89343D77DF5EF373 /* Pods-SHMultilevelSubmenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHMultilevelSubmenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHMultilevelSubmenu/Pods-SHMultilevelSubmenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6D45FB2820B7E9DD002FB386 /* SHImageSegment */ = {
+			isa = PBXGroup;
+			children = (
+				6D45FB2920B7E9DD002FB386 /* UIView+ToImage.h */,
+				6D45FB2A20B7E9DD002FB386 /* SHItemModel.m */,
+				6D45FB2B20B7E9DD002FB386 /* SHItem.m */,
+				6D45FB2C20B7E9DD002FB386 /* SHSegmentController.h */,
+				6D45FB2D20B7E9DD002FB386 /* SHItemModel.h */,
+				6D45FB2E20B7E9DD002FB386 /* UIView+ToImage.m */,
+				6D45FB2F20B7E9DD002FB386 /* SHSegmentController.m */,
+				6D45FB3020B7E9DD002FB386 /* SHItem.h */,
+			);
+			path = SHImageSegment;
+			sourceTree = "<group>";
+		};
 		6D5273F220B645F6001532BF = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +154,7 @@
 		6D5273FD20B645F6001532BF /* SHMultilevelSubmenu */ = {
 			isa = PBXGroup;
 			children = (
+				6D45FB2820B7E9DD002FB386 /* SHImageSegment */,
 				6D52743320B6460A001532BF /* MultilevelSubmenu */,
 				6D5273FE20B645F6001532BF /* AppDelegate.h */,
 				6D5273FF20B645F6001532BF /* AppDelegate.m */,
@@ -169,10 +191,6 @@
 		6D52743320B6460A001532BF /* MultilevelSubmenu */ = {
 			isa = PBXGroup;
 			children = (
-				6DAD787F20B7A04E00CB0204 /* MultilevelConfig.h */,
-				6DAD788020B7A04E00CB0204 /* MultilevelConfig.m */,
-				6DAD788220B7A2B400CB0204 /* MultilevelModel.h */,
-				6DAD788320B7A2B400CB0204 /* MultilevelModel.m */,
 			);
 			path = MultilevelSubmenu;
 			sourceTree = "<group>";
@@ -329,12 +347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAD788420B7A2B400CB0204 /* MultilevelModel.m in Sources */,
 				6D52740320B645F6001532BF /* ViewController.m in Sources */,
-				6DAD788120B7A04E00CB0204 /* MultilevelConfig.m in Sources */,
 				6D52740020B645F6001532BF /* AppDelegate.m in Sources */,
+				6D45FB3420B7E9DD002FB386 /* SHSegmentController.m in Sources */,
 				6D52741120B645F7001532BF /* main.m in Sources */,
+				6D45FB3220B7E9DD002FB386 /* SHItem.m in Sources */,
+				6D45FB3120B7E9DD002FB386 /* SHItemModel.m in Sources */,
 				6D52740920B645F6001532BF /* SHMultilevelSubmenu.xcdatamodeld in Sources */,
+				6D45FB3320B7E9DD002FB386 /* UIView+ToImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

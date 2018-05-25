@@ -1,5 +1,5 @@
 //
-//  MultilevelConfig.h
+//  SHItemModel.h
 //  SHMultilevelSubmenu
 //
 //  Created by HaoSun on 2018/5/25.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HMSegmentedControl.h"
 
-@interface MultilevelConfig : NSObject
-
-+ (HMSegmentedControl *)segCreat;
+@interface SHItemModel : NSObject
 
 @end

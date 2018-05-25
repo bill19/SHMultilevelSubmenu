@@ -1,13 +1,13 @@
 //
-//  MultilevelModel.h
+//  SHItemModel.m
 //  SHMultilevelSubmenu
 //
 //  Created by HaoSun on 2018/5/25.
 //  Copyright © 2018年 SHKIT. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SHItemModel.h"
 
-@interface MultilevelModel : NSObject
+@implementation SHItemModel
 
 @end

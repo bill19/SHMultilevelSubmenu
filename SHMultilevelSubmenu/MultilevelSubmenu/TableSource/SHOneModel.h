@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SHOneModel : NSObject
-
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *imageN;
 @end

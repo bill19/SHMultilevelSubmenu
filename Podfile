@@ -16,5 +16,6 @@ target :"SHMultilevelSubmenu" do
 pod 'SDWebImage', '~> 4.3.3'
 pod 'Masonry', '~> 1.1.0'
 pod 'HMSegmentedControl'
+pod 'MJRefresh'
 end
 

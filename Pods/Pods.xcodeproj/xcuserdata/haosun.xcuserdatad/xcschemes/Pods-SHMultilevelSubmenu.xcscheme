@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAB4EA5DA5736A5034786A769B3B9848"
+               BlueprintIdentifier = "3DB78F16317502490C5606E55FF3213D"
                BlueprintName = "Pods-SHMultilevelSubmenu"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-SHMultilevelSubmenu.a">

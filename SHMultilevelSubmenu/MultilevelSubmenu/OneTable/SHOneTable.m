@@ -9,6 +9,7 @@
 #import "SHOneTable.h"
 #import "Masonry.h"
 #import "SHOneTableCell.h"
+#import "MJRefresh.h"
 
 @interface SHOneTable () <UITableViewDelegate,UITableViewDataSource>
 
@@ -19,17 +20,31 @@
 
 
 @implementation SHOneTable
-
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
         [self.tableView registerClass:[SHOneTableCell class] forCellReuseIdentifier:@"SHOneTableCell"];
-
+        self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];
+        self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerLoading)];
     }
     return self;
 }
 
+#pragma mark = header footer
+- (void)headerRefresh {
+
+    NSLog(@"headerRefresh");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_header endRefreshing];
+    });
+}
+
+- (void)footerLoading {
+    [self.tableView.mj_footer endRefreshing];
+    [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    NSLog(@"footerLoading");
+}
 
 /**
  根据数据源更新tableview 展示
@@ -39,8 +54,10 @@
 - (void)reloadOneTableWithSource:(NSArray <SHOneModel *>*)source {
     
     self.tableDataSource = source;
+
     [self.tableView reloadData];
 }
+
 
 #pragma mark - data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -81,7 +98,7 @@
 #pragma mark getters
 - (UITableView *)tableView {
     if (_tableView == nil) {
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.estimatedRowHeight = 100.0f;
@@ -93,14 +110,6 @@
         tableView.tableFooterView = [UITableViewHeaderFooterView new];
         [self addSubview:tableView];
         _tableView = tableView;
-        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.top.equalTo(self);
-            if (@available(iOS 11.0, *)) {
-                make.bottom.equalTo(self.mas_safeAreaLayoutGuideBottom);
-            } else {
-                make.bottom.equalTo(self);
-            }
-        }];
     }
     return _tableView;
 }

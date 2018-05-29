@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SHMultilevelSubmenuVC.h
 //  SHMultilevelSubmenu
 //
 //  Created by HaoSun on 2018/5/25.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SHMultilevelSubmenuVC : UIViewController
 
 @end

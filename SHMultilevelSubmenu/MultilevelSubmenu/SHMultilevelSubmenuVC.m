@@ -48,7 +48,7 @@
 
 - (void)setupMultilevelSubmenu {
     NSMutableArray *mu1 = [NSMutableArray array];
-    for (NSInteger index = 0; index < 3; index ++) {
+    for (NSInteger index = 0; index < 2; index ++) {
         NSMutableArray *mu2 = [NSMutableArray array];
         for (NSInteger index0 = 0; index0 < 4; index0 ++) {
             [mu2 addObject:[NSString randomStringWithLength:(random() % 8)]];

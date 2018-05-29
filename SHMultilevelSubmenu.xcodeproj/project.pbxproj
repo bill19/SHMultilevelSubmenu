@@ -31,6 +31,7 @@
 		6DA1CB0C20BD00CB004D176A /* SHTablesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1CB0B20BD00CB004D176A /* SHTablesView.m */; };
 		6DA1CB0F20BD021E004D176A /* SHTablsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1CB0E20BD021E004D176A /* SHTablsCell.m */; };
 		6DA1CB1220BD1DE0004D176A /* SHTablesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1CB1120BD1DE0004D176A /* SHTablesModel.m */; };
+		6DA1CB1720BD38C0004D176A /* SHMultilevelSubmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		6DA1CB0E20BD021E004D176A /* SHTablsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTablsCell.m; sourceTree = "<group>"; };
 		6DA1CB1020BD1DE0004D176A /* SHTablesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTablesModel.h; sourceTree = "<group>"; };
 		6DA1CB1120BD1DE0004D176A /* SHTablesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTablesModel.m; sourceTree = "<group>"; };
+		6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHMultilevelSubmenu.png; sourceTree = "<group>"; };
 		E94ECC8C89343D77DF5EF373 /* Pods-SHMultilevelSubmenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHMultilevelSubmenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHMultilevelSubmenu/Pods-SHMultilevelSubmenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 		6D5273FD20B645F6001532BF /* SHMultilevelSubmenu */ = {
 			isa = PBXGroup;
 			children = (
+				6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */,
 				6DA1CB0820BCDF67004D176A /* NSString+MTRandom.h */,
 				6DA1CB0720BCDF66004D176A /* NSString+MTRandom.m */,
 				6D45FB2820B7E9DD002FB386 /* SHImageSegment */,
@@ -377,6 +380,7 @@
 				6D52740E20B645F7001532BF /* LaunchScreen.storyboard in Resources */,
 				6D52740B20B645F7001532BF /* Assets.xcassets in Resources */,
 				6D52740620B645F6001532BF /* Main.storyboard in Resources */,
+				6DA1CB1720BD38C0004D176A /* SHMultilevelSubmenu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

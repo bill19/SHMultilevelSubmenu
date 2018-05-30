@@ -15,7 +15,9 @@
 #import "SHTablesModel.h"
 #import "SHOneModel.h"
 #import "Masonry.h"
-
+#import "SHItemModel.h"
+#import "SHItem.h"
+#import "UIView+ToImage.h"
 @interface SHMultilevelSubmenuVC ()
 @property (nonatomic, strong) SHMultilevelSubmenu *menu;
 @end
@@ -30,8 +32,8 @@
     [self setupController];
     [self request];
 //    [self setupButton];
-
-    [self setupMultilevelSubmenu];
+    [self setupLabel];
+//    [self setupMultilevelSubmenu];
     [self setupSHTablesView];
 }
 
@@ -69,6 +71,42 @@
     [self.view addSubview:menu];
     _menu = menu;
     
+}
+
+- (void)setupLabel {
+    NSMutableArray *muimage = [NSMutableArray array];
+    NSMutableArray *muSelect = [NSMutableArray array];
+    CGFloat imageWidth = [UIScreen mainScreen].bounds.size.width * 0.23;
+    NSArray *source1 = @[@"31",@"128",@"22.25",@"12.8"];
+    NSArray *source2 = @[@"单价",@"面积",@"金额",@"侧面"];
+
+    for (NSInteger index = 0; index < source1.count; index ++) {
+        SHItem *item = [[SHItem alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
+        SHItemModel *model = [SHItemModel creatItem1];
+        model.title1 = source1[index];
+        model.title2 = source2[index];
+        item.itemModel = model;
+        [muimage addObject:[item toUIImage]];
+    }
+
+    for (NSInteger index = 0; index < source1.count; index ++) {
+        SHItem *item = [[SHItem alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
+        SHItemModel *model = [SHItemModel creatItem2];
+        model.title1 = source1[index];
+        model.title2 = source2[index];
+        item.itemModel = model;
+        [muSelect addObject:[item toUIImage]];
+    }
+
+    SHMultilevelSubmenu *menu = [[SHMultilevelSubmenu alloc] initWithLevel:1 sectionImages:@[muimage] selectImages:@[muSelect]];
+    menu.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 72);
+    menu.indexChange = ^(NSInteger section, NSInteger index, NSArray *selects) {
+        NSLog(@"section = %ld index = %ld,selects %@",section,index,selects);
+    };
+    [self.view addSubview:menu];
+    _menu = menu;
+
+
 }
 
 - (void)setupButton {

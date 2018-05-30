@@ -24,6 +24,15 @@ static CGFloat const kUnitSubmenuHeight = 44.0f;
  */
 - (instancetype)initWithLevel:(NSInteger)level normalSource:(NSArray <NSArray <NSString *>* > *)normalSorce;
 
+/**
+ 创建有几级 的数据 通过图片创建
+
+ @param level 级别信息
+ @param sectionImages 默认情况下展示的层级层数
+ @param selectImages  默认情况下展示的层级层数
+ @return 创建信息
+ */
+- (instancetype)initWithLevel:(NSInteger)level sectionImages:(NSArray <NSArray <UIImage *>* > *)sectionImages selectImages:(NSArray <NSArray <UIImage *>* > *)selectImages;
 
 /**
  更新某一行

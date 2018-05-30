@@ -27,4 +27,21 @@
     return segmentedControl;
 }
 
+
++ (HMSegmentedControl *)creatimageSegment {
+    HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] init];
+//    segmentedControl.sectionTitles = @[@"🌺",@"草", @"🌲", @"木"];
+    segmentedControl.selectedSegmentIndex = 0;
+    segmentedControl.backgroundColor = [UIColor whiteColor];
+    segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor],
+                                             NSFontAttributeName:[UIFont systemFontOfSize:13]};
+    segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor redColor],
+                                                     NSFontAttributeName:[UIFont systemFontOfSize:13]};
+
+    segmentedControl.selectionIndicatorColor = [UIColor redColor];
+    segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+    segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    segmentedControl.selectionIndicatorHeight = 2;
+    return segmentedControl;
+}
 @end

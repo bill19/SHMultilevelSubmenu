@@ -12,4 +12,6 @@
 
 + (HMSegmentedControl *)creatFirstSegment ;
 
+
++ (HMSegmentedControl *)creatimageSegment ;
 @end

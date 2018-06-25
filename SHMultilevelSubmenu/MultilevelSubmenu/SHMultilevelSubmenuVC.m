@@ -18,6 +18,8 @@
 #import "SHItemModel.h"
 #import "SHItem.h"
 #import "UIView+ToImage.h"
+#import "SHItem2.h"
+#import "SHCustomerView.h"
 @interface SHMultilevelSubmenuVC ()
 @property (nonatomic, strong) SHMultilevelSubmenu *menu;
 @end
@@ -35,6 +37,12 @@
     [self setupLabel];
 //    [self setupMultilevelSubmenu];
     [self setupSHTablesView];
+    
+    SHItem2 *item2 = [[SHItem2 alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:item2];
+    SHCustomerView *customView = [[SHCustomerView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+//    [self.view addSubview:customView];
+
 }
 
 - (void)dealloc {

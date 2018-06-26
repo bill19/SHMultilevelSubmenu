@@ -1,5 +1,5 @@
 //
-//  SHItem2.h
+//  SHItem3.h
 //  SHMultilevelSubmenu
 //
 //  Created by HaoSun on 2018/6/25.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SHItemModel.h"
-@interface SHItem2 : UIView
+
+@interface SHItem3 : UIView
 
 @property (nonatomic, strong) SHItemModel *itemModel;
 

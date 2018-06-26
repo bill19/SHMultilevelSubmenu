@@ -18,8 +18,9 @@
 #import "SHItemModel.h"
 #import "SHItem.h"
 #import "UIView+ToImage.h"
-#import "SHItem2.h"
 #import "SHCustomerView.h"
+#import "SHItem2.h"
+#import "SHItem3.h"
 @interface SHMultilevelSubmenuVC ()
 @property (nonatomic, strong) SHMultilevelSubmenu *menu;
 @end
@@ -38,9 +39,9 @@
 //    [self setupMultilevelSubmenu];
     [self setupSHTablesView];
     
-    SHItem2 *item2 = [[SHItem2 alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview:item2];
-    SHCustomerView *customView = [[SHCustomerView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+//    SHItem2 *item2 = [[SHItem2 alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [self.view addSubview:item2];
+//    SHCustomerView *customView = [[SHCustomerView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
 //    [self.view addSubview:customView];
 
 }
@@ -89,7 +90,7 @@
     NSArray *source2 = @[@"单价",@"面积",@"金额",@"侧面"];
 
     for (NSInteger index = 0; index < source1.count; index ++) {
-        SHItem *item = [[SHItem alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
+        SHItem2 *item = [[SHItem2 alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
         SHItemModel *model = [SHItemModel creatItem1];
         model.title1 = source1[index];
         model.title2 = source2[index];
@@ -98,7 +99,7 @@
     }
 
     for (NSInteger index = 0; index < source1.count; index ++) {
-        SHItem *item = [[SHItem alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
+        SHItem3 *item = [[SHItem3 alloc] initWithFrame:CGRectMake(0, 0, imageWidth, 72)];
         SHItemModel *model = [SHItemModel creatItem2];
         model.title1 = source1[index];
         model.title2 = source2[index];

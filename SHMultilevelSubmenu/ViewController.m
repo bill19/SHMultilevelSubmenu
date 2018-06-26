@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SHSegmentController.h"
 #import "SHMultilevelSubmenuVC.h"
+#import "SHLrregularController.h"
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -88,6 +89,12 @@
         }
             break;
 
+        case 2:
+        {
+            [self.navigationController pushViewController:[SHLrregularController new] animated:YES];
+        }
+            break;
+            
         default:
             break;
     }
@@ -133,7 +140,7 @@
 - (NSArray *)tableDataSource {
 
     if (!_tableDataSource) {
-        _tableDataSource = @[@"Segment",@"多级菜单"];
+        _tableDataSource = @[@"Segment",@"多级菜单",@"不规则"];
     }
     return _tableDataSource;
 

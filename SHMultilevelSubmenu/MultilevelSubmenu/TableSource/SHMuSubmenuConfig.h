@@ -14,4 +14,6 @@
 
 
 + (HMSegmentedControl *)creatimageSegment ;
+
++ (HMSegmentedControl *)creatimageSegment2 ;
 @end

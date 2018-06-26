@@ -1,28 +1,26 @@
 //
-//  SHItem2.m
+//  SHItem3.m
 //  SHMultilevelSubmenu
 //
 //  Created by HaoSun on 2018/6/25.
 //  Copyright © 2018年 SHKIT. All rights reserved.
 //
 
-#import "SHItem2.h"
+#import "SHItem3.h"
 
-@interface SHItem2 ()
+@interface SHItem3 ()
 @property (nonatomic, weak) UILabel *label1;
 @property (nonatomic, weak) UILabel *label2;
 @end
 
-@implementation SHItem2
-
+@implementation SHItem3
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
 
-//        [self setupSuViews];
-        self.backgroundColor = [UIColor whiteColor];
+        [self setupSuViews];
     }
     return self;
 }
@@ -63,9 +61,8 @@
     CGContextAddLineToPoint(context, self.bounds.size.width - padding, self.bounds.size.height);
     CGContextAddLineToPoint(context, self.bounds.size.width, 0);
     CGContextClosePath(context);//路径结束标志，不写默认封闭
-//    [[UIColor greenColor] setFill]; //设置填充色
-    [[UIColor colorWithRed:91.0/255.0f green:146/255.0f blue:246.0f/255.0f alpha:1.0f] setFill];
-//    [[UIColor whiteColor] setStroke]; //设置边框颜色
+    [[UIColor blueColor] setFill]; //设置填充色
+    [[UIColor whiteColor] setStroke]; //设置边框颜色
     CGContextDrawPath(context, kCGPathFillStroke);//绘制路径path
 }
 

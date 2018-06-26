@@ -34,6 +34,8 @@
 		6DA1CB1220BD1DE0004D176A /* SHTablesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1CB1120BD1DE0004D176A /* SHTablesModel.m */; };
 		6DA1CB1720BD38C0004D176A /* SHMultilevelSubmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */; };
 		6DE2DABD20E084AE0065B6D7 /* SHItem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2DABC20E084AE0065B6D7 /* SHItem2.m */; };
+		6DFB23AE20E2356700334152 /* SHLrregularController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB23AC20E2356700334152 /* SHLrregularController.m */; };
+		6DFB23B120E2358800334152 /* SHItem3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB23B020E2358800334152 /* SHItem3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,10 @@
 		6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHMultilevelSubmenu.png; sourceTree = "<group>"; };
 		6DE2DABB20E084AE0065B6D7 /* SHItem2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHItem2.h; sourceTree = "<group>"; };
 		6DE2DABC20E084AE0065B6D7 /* SHItem2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHItem2.m; sourceTree = "<group>"; };
+		6DFB23AC20E2356700334152 /* SHLrregularController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLrregularController.m; sourceTree = "<group>"; };
+		6DFB23AD20E2356700334152 /* SHLrregularController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLrregularController.h; sourceTree = "<group>"; };
+		6DFB23AF20E2358800334152 /* SHItem3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHItem3.h; sourceTree = "<group>"; };
+		6DFB23B020E2358800334152 /* SHItem3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHItem3.m; sourceTree = "<group>"; };
 		E94ECC8C89343D77DF5EF373 /* Pods-SHMultilevelSubmenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHMultilevelSubmenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHMultilevelSubmenu/Pods-SHMultilevelSubmenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +204,8 @@
 				6D45FB2B20B7E9DD002FB386 /* SHItem.m */,
 				6DE2DABB20E084AE0065B6D7 /* SHItem2.h */,
 				6DE2DABC20E084AE0065B6D7 /* SHItem2.m */,
+				6DFB23AF20E2358800334152 /* SHItem3.h */,
+				6DFB23B020E2358800334152 /* SHItem3.m */,
 				6D0E071220E08E4500BB9BAB /* SHCustomerView.h */,
 				6D0E071320E08E4500BB9BAB /* SHCustomerView.m */,
 				6D45FB2C20B7E9DD002FB386 /* SHSegmentController.h */,
@@ -236,6 +244,7 @@
 				6DA1CB1620BD38BF004D176A /* SHMultilevelSubmenu.png */,
 				6DA1CB0820BCDF67004D176A /* NSString+MTRandom.h */,
 				6DA1CB0720BCDF66004D176A /* NSString+MTRandom.m */,
+				6DFB23AB20E2356700334152 /* Irregular */,
 				6D45FB2820B7E9DD002FB386 /* SHImageSegment */,
 				6D52743320B6460A001532BF /* MultilevelSubmenu */,
 				6D5273FE20B645F6001532BF /* AppDelegate.h */,
@@ -280,6 +289,15 @@
 				6D330C9920BBF4F900D6D407 /* Tables */,
 			);
 			path = MultilevelSubmenu;
+			sourceTree = "<group>";
+		};
+		6DFB23AB20E2356700334152 /* Irregular */ = {
+			isa = PBXGroup;
+			children = (
+				6DFB23AC20E2356700334152 /* SHLrregularController.m */,
+				6DFB23AD20E2356700334152 /* SHLrregularController.h */,
+			);
+			path = Irregular;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,11 +485,13 @@
 				6D45FB3720B7EA9B002FB386 /* ViewController.m in Sources */,
 				6D52741120B645F7001532BF /* main.m in Sources */,
 				6DE2DABD20E084AE0065B6D7 /* SHItem2.m in Sources */,
+				6DFB23B120E2358800334152 /* SHItem3.m in Sources */,
 				6DA1CB0C20BD00CB004D176A /* SHTablesView.m in Sources */,
 				6D45FB3220B7E9DD002FB386 /* SHItem.m in Sources */,
 				6D45FB3120B7E9DD002FB386 /* SHItemModel.m in Sources */,
 				6D330C9F20BBF52F00D6D407 /* SHOneTable.m in Sources */,
 				6D52740920B645F6001532BF /* SHMultilevelSubmenu.xcdatamodeld in Sources */,
+				6DFB23AE20E2356700334152 /* SHLrregularController.m in Sources */,
 				6D45FB3320B7E9DD002FB386 /* UIView+ToImage.m in Sources */,
 				6D0E071420E08E4500BB9BAB /* SHCustomerView.m in Sources */,
 			);
